@@ -10,10 +10,15 @@ The proposed system is to generate the methods to connect and select the data fr
 The file package structure will have an example for csv main_csv_report() and another for mysql main_sql_report() in the main file called application.py the rest of the functions will be generated in separate modules in the rest of the package.
 File structure (the corresponding \_\_init\_\_ files will be skipped):
 
-- application.py
-- companies_example_data.csv
-- dbhandlers
-  ⋅⋅ -mysqlhandler.py
-  ⋅⋅ -duplicatehandler.py
+> application.py
+> companies_example_data.csv
+> dbhandlers
+>
+> > mysqlhandler.py
+> > duplicatehandler.py
 
 A report.json file will be generated as output
+
+## Installation and creation of the virtual environment
+
+To generate an independent and portable system, a virtual environment "env" will be created, generating a requirements.txt file for the necessary dependencies. Review documentation in [Creation of virtual environments](https://docs.python.org/3/library/venv.html).
